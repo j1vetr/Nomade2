@@ -56,7 +56,7 @@ npm install
 npm run build
 
 # 3. PM2 ile başlat
-pm2 start ecosystem.config.js
+pm2 start ecosystem.config.cjs
 
 # 4. PM2 kaydet
 pm2 save
@@ -97,6 +97,9 @@ git pull origin main
 
 # Yeniden deploy
 ./deploy.sh
+
+# Veya manuel restart
+pm2 restart ecosystem.config.cjs --update-env
 ```
 
 ## 🌐 Nginx ile Kullanım (Önerilen)
@@ -147,7 +150,7 @@ sudo certbot --nginx -d your-domain.com -d www.your-domain.com
 
 Farklı bir port kullanmak isterseniz:
 
-1. `ecosystem.config.js` dosyasını düzenleyin:
+1. `ecosystem.config.cjs` dosyasını düzenleyin:
 ```javascript
 env: {
     NODE_ENV: 'production',
@@ -157,7 +160,7 @@ env: {
 
 2. PM2'yi yeniden başlatın:
 ```bash
-pm2 restart ecosystem.config.js --update-env
+pm2 restart ecosystem.config.cjs --update-env
 ```
 
 ## 📁 Proje Yapısı
@@ -168,10 +171,10 @@ maison-nomade/
 ├── server/              # Express backend
 ├── dist/                # Build edilen dosyalar
 │   └── public/         # Frontend build çıktısı
-├── logs/               # PM2 logları
-├── ecosystem.config.js # PM2 konfigürasyonu
-├── deploy.sh           # Deployment scripti
-└── package.json        # Ana paket dosyası
+├── logs/                # PM2 logları
+├── ecosystem.config.cjs # PM2 konfigürasyonu (.cjs = CommonJS)
+├── deploy.sh            # Deployment scripti
+└── package.json         # Ana paket dosyası
 ```
 
 ## ⚡ Önemli Notlar
