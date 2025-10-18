@@ -116,7 +116,7 @@ server {
     server_name your-domain.com www.your-domain.com;
 
     location / {
-        proxy_pass http://localhost:5000;
+        proxy_pass http://localhost:6644;
         proxy_http_version 1.1;
         proxy_set_header Upgrade $http_upgrade;
         proxy_set_header Connection 'upgrade';
@@ -180,7 +180,7 @@ maison-nomade/
 ## ⚡ Önemli Notlar
 
 1. **Production Build**: Uygulama her zaman build edilmiş versiyonla çalışır (`npm run build`)
-2. **Port**: Varsayılan port 5000, değiştirebilirsiniz
+2. **Port**: Uygulama **6644** portunda çalışır
 3. **Otomatik Başlatma**: `pm2 startup` ile sistem başlangıcında otomatik başlar
 4. **Memory Limit**: 500MB'ı geçerse otomatik restart
 5. **Loglar**: `logs/` klasöründe saklanır
