@@ -1,0 +1,50 @@
+8|maison-n | 2025-10-19 00:10:12:     at emitErrorNT (node:net:1944:8)
+8|maison-n | 2025-10-19 00:10:12:     at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+8|maison-n | 2025-10-19 00:10:12:   code: 'EADDRINUSE',
+8|maison-n | 2025-10-19 00:10:12:   errno: -98,
+8|maison-n | 2025-10-19 00:10:12:   syscall: 'listen',
+8|maison-n | 2025-10-19 00:10:12:   address: '0.0.0.0',
+8|maison-n | 2025-10-19 00:10:12:   port: 5000
+8|maison-n | 2025-10-19 00:10:12: }
+8|maison-n | 2025-10-19 00:10:12:
+8|maison-n | 2025-10-19 00:10:12: Node.js v20.19.5
+8|maison-n | 2025-10-19 00:10:13: node:events:502
+8|maison-n | 2025-10-19 00:10:13:       throw er; // Unhandled 'error' event
+8|maison-n | 2025-10-19 00:10:13:       ^
+8|maison-n | 2025-10-19 00:10:13:
+8|maison-n | 2025-10-19 00:10:13: Error: listen EADDRINUSE: address already in use 0.0.0.0:5000
+8|maison-n | 2025-10-19 00:10:13:     at Server.setupListenHandle [as _listen2] (node:net:1908:16)
+8|maison-n | 2025-10-19 00:10:13:     at listenInCluster (node:net:1965:12)
+8|maison-n | 2025-10-19 00:10:13:     at doListen (node:net:2139:7)
+8|maison-n | 2025-10-19 00:10:13:     at process.processTicksAndRejections (node:internal/process/task_queues:83:21)
+8|maison-n | 2025-10-19 00:10:13: Emitted 'error' event on Server instance at:
+8|maison-n | 2025-10-19 00:10:13:     at emitErrorNT (node:net:1944:8)
+8|maison-n | 2025-10-19 00:10:13:     at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+8|maison-n | 2025-10-19 00:10:13:   code: 'EADDRINUSE',
+8|maison-n | 2025-10-19 00:10:13:   errno: -98,
+8|maison-n | 2025-10-19 00:10:13:   syscall: 'listen',
+8|maison-n | 2025-10-19 00:10:13:   address: '0.0.0.0',
+8|maison-n | 2025-10-19 00:10:13:   port: 5000
+8|maison-n | 2025-10-19 00:10:13: }
+8|maison-n | 2025-10-19 00:10:13:
+8|maison-n | 2025-10-19 00:10:13: Node.js v20.19.5
+8|maison-n | 2025-10-19 00:10:13: node:events:502
+8|maison-n | 2025-10-19 00:10:13:       throw er; // Unhandled 'error' event
+8|maison-n | 2025-10-19 00:10:13:       ^
+8|maison-n | 2025-10-19 00:10:13:
+8|maison-n | 2025-10-19 00:10:13: Error: listen EADDRINUSE: address already in use 0.0.0.0:5000
+8|maison-n | 2025-10-19 00:10:13:     at Server.setupListenHandle [as _listen2] (node:net:1908:16)
+8|maison-n | 2025-10-19 00:10:13:     at listenInCluster (node:net:1965:12)
+8|maison-n | 2025-10-19 00:10:13:     at doListen (node:net:2139:7)
+8|maison-n | 2025-10-19 00:10:13:     at process.processTicksAndRejections (node:internal/process/task_queues:83:21)
+8|maison-n | 2025-10-19 00:10:13: Emitted 'error' event on Server instance at:
+8|maison-n | 2025-10-19 00:10:13:     at emitErrorNT (node:net:1944:8)
+8|maison-n | 2025-10-19 00:10:13:     at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+8|maison-n | 2025-10-19 00:10:13:   code: 'EADDRINUSE',
+8|maison-n | 2025-10-19 00:10:13:   errno: -98,
+8|maison-n | 2025-10-19 00:10:13:   syscall: 'listen',
+8|maison-n | 2025-10-19 00:10:13:   address: '0.0.0.0',
+8|maison-n | 2025-10-19 00:10:13:   port: 5000
+8|maison-n | 2025-10-19 00:10:13: }
+8|maison-n | 2025-10-19 00:10:13:
+8|maison-n | 2025-10-19 00:10:13: Node.js v20.19.5
