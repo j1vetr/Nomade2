@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
-import { Globe, Mail, Phone, ArrowRight } from 'lucide-react';
-import { SiTelegram, SiWhatsapp, SiInstagram, SiLinkedin } from 'react-icons/si';
+import { Globe, Phone, ArrowRight } from 'lucide-react';
+import { SiTelegram, SiWhatsapp, SiInstagram } from 'react-icons/si';
 import { Button } from '@/components/ui/button';
 import { translations, contactLinks, type Language } from '@/config/translations';
 import logoImage from '@assets/logo_1760818509957.png';
@@ -10,8 +10,6 @@ const iconComponents = {
   SiWhatsapp,
   SiInstagram,
   Globe,
-  Mail,
-  SiLinkedin,
   Phone
 };
 
