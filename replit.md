@@ -144,5 +144,9 @@ Preferred communication style: Simple, everyday language.
 
 **Hosting & Deployment:**
 - Configured for Replit deployment
-- Environment variable: DATABASE_URL for PostgreSQL connection
-- Production build serves static React app from Express
+- Production ready with PM2 configuration (ecosystem.config.js)
+- Automated deployment script (deploy.sh)
+- Express serves static React build in production
+- Port 5000 (configurable via PORT env variable)
+- Nginx reverse proxy recommended for production
+- SSL support via Let's Encrypt/Certbot
