@@ -54,11 +54,11 @@ export interface ContactLink {
 }
 
 export const contactLinks: ContactLink[] = [
-  { id: 'telegram', url: 'https://t.me/faklllp', icon: 'MessageCircle', external: true },
-  { id: 'whatsapp', url: 'https://wa.me/375333712473', icon: 'MessageSquare', external: true },
-  { id: 'instagram', url: 'https://www.instagram.com/maison.nomade.tourism/', icon: 'Instagram', external: true },
+  { id: 'telegram', url: 'https://t.me/faklllp', icon: 'SiTelegram', external: true },
+  { id: 'whatsapp', url: 'https://wa.me/375333712473', icon: 'SiWhatsapp', external: true },
+  { id: 'instagram', url: 'https://www.instagram.com/maison.nomade.tourism/', icon: 'SiInstagram', external: true },
   { id: 'website', url: 'https://maison-nomade-tourism.com/', icon: 'Globe', external: true },
   { id: 'email', url: 'mailto:info@mn-tourism.com', icon: 'Mail', external: false },
-  { id: 'linkedin', url: 'https://www.linkedin.com/company/maison-nomade-tourism', icon: 'Linkedin', external: true },
+  { id: 'linkedin', url: 'https://www.linkedin.com/company/maison-nomade-tourism', icon: 'SiLinkedin', external: true },
   { id: 'call', url: 'tel:+375333712473', icon: 'Phone', external: false }
 ];

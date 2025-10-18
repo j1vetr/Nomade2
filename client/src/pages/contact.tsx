@@ -1,16 +1,17 @@
 import { useState, useEffect } from 'react';
-import { MessageCircle, MessageSquare, Instagram, Globe, Mail, Linkedin, Phone, ArrowRight } from 'lucide-react';
+import { Globe, Mail, Phone, ArrowRight } from 'lucide-react';
+import { SiTelegram, SiWhatsapp, SiInstagram, SiLinkedin } from 'react-icons/si';
 import { Button } from '@/components/ui/button';
 import { translations, contactLinks, type Language } from '@/config/translations';
 import logoImage from '@assets/logo_1760818509957.png';
 
 const iconComponents = {
-  MessageCircle,
-  MessageSquare,
-  Instagram,
+  SiTelegram,
+  SiWhatsapp,
+  SiInstagram,
   Globe,
   Mail,
-  Linkedin,
+  SiLinkedin,
   Phone
 };
 
@@ -89,6 +90,11 @@ export default function ContactPage() {
             {contactLinks.map((link, index) => {
               const IconComponent = iconComponents[link.icon as keyof typeof iconComponents];
               const buttonLabel = t.buttons[link.id as keyof typeof t.buttons];
+              
+              if (!IconComponent) {
+                console.error(`Icon component not found for: ${link.icon}`);
+                return null;
+              }
               
               return (
                 <a
