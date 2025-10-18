@@ -1,0 +1,90 @@
+React + Tailwind CSS kullanarak “Maison Nomade Tourism” için modern, mobil uyumlu, tek sayfalık bir iletişim sayfası oluştur.
+
+🧭 Genel Yapı:
+- Üstte logo (ben yükleyeceğim)
+- Altında başlık (dile göre RU veya EN)
+- Altında büyük, yuvarlatılmış butonlar:
+  1. Telegram → https://t.me/faklllp
+  2. WhatsApp → https://wa.me/375333712473
+  3. Instagram → https://www.instagram.com/maison.nomade.tourism/
+  4. Web Site → https://maison-nomade-tourism.com/
+  5. E-mail → mailto:info@mn-tourism.com
+  6. LinkedIn → https://www.linkedin.com/company/maison-nomade-tourism
+  7. Telefon → tel:+375333712473
+- Altında küçük açıklama metni
+- En altta telif: ©2025 MAISON NOMADE
+
+🌍 Diller:
+Sayfa RU (varsayılan) ve EN olarak iki dil destekleyecek. Sağ üstte RU/EN dil geçiş butonu olacak.
+Tüm metinler JSON dosyasından gelecek.
+
+📜 RU Metinleri:
+{
+  "title": "ВЫБЕРИТЕ УДОБНЫЙ МЕССЕНДЖЕР ДЛЯ СВЯЗИ",
+  "helper": "Облегчите свое путешествие с помощью нашей службы поддержки, которая работает безупречно и индивидуально",
+  "buttons": {
+    "telegram": "Telegram",
+    "whatsapp": "WhatsApp",
+    "instagram": "Instagram",
+    "website": "Веб-сайт",
+    "email": "E-mail",
+    "linkedin": "LinkedIn",
+    "call": "Позвонить"
+  },
+  "footer": "©2025 MAISON NOMADE"
+}
+
+📜 EN Metinleri:
+{
+  "title": "CHOOSE A CONVENIENT MESSENGER TO CONTACT US",
+  "helper": "Make your trip easier with our support team that works flawlessly and personally",
+  "buttons": {
+    "telegram": "Telegram",
+    "whatsapp": "WhatsApp",
+    "instagram": "Instagram",
+    "website": "Website",
+    "email": "E-mail",
+    "linkedin": "LinkedIn",
+    "call": "Call us"
+  },
+  "footer": "©2025 MAISON NOMADE"
+}
+
+🎨 Tasarım:
+- Arka plan rengi: `#1e2e52` (sabit arka plan)
+- İçerik tam ortada, dikey ve yatay hizalı (min-h-screen, flex, items-center, justify-center)
+- Modern, sade tipografi (Inter veya Poppins)
+- Butonlar: geniş, yuvarlatılmış, yumuşak gölgeli, ikonlu
+- Hover/tap: buton hafif büyüsün (scale-[1.03]) ve parlama efekti olsun
+- Dış linkler yeni sekmede açılsın (`target="_blank"`, `rel="noopener noreferrer"`)
+- mailto ve tel linkleri cihazda yerel olarak açılsın
+- Fade-in animasyonu ile giriş
+- Mobilde tek sütun, masaüstünde iki sütun
+- Sağ üstte dil değiştirici (RU/EN toggle)
+- Footer en altta küçük gri yazı
+- İkonlar: Telegram, WhatsApp, Instagram, Website, Email, LinkedIn, Telefon ve sağ ok (→)
+  `lucide-react` veya `react-icons` kullanılabilir
+
+⚙️ Ek Özellikler:
+- Kod bileşen tabanlı olacak, linkler ve metinler config dosyasından yönetilecek.
+- `<html lang>` aktif dile göre güncellenecek.
+- JSON-LD Schema (Organization) eklenecek:
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Maison Nomade Tourism",
+    "url": "https://maison-nomade-tourism.com/",
+    "sameAs": [
+      "https://www.instagram.com/maison.nomade.tourism/",
+      "https://www.linkedin.com/company/maison-nomade-tourism"
+    ],
+    "contactPoint": {
+      "telephone": "+375333712473",
+      "email": "info@mn-tourism.com"
+    }
+  }
+
+📱 Davranış:
+- Sayfa açıldığında mobilde **hemen tam ekranda görünmeli**
+- Tüm öğeler yumuşak animasyonlarla gelmeli
+- Renk uyumu tamamen `#1e2e52` üzerine beyaz ve açık gri tonlarda kurulmalı
