@@ -1,7 +1,7 @@
 # Design Guidelines: Maison Nomade Tourism Contact Page
 
 ## Project Overview
-A modern, mobile-responsive single-page contact website for Maison Nomade Tourism with bilingual support (Russian/English).
+A modern, mobile-responsive single-page contact website for Maison Nomade Tourism (English only).
 
 ## Visual Design System
 
@@ -23,11 +23,10 @@ A modern, mobile-responsive single-page contact website for Maison Nomade Touris
 ### Layout Structure
 **Vertical Flow** (top to bottom):
 1. Logo (provided image: logo_1760818509957.png)
-2. Language switcher (RU/EN toggle) - positioned top-right corner
-3. Main title (bilingual)
-4. Contact buttons grid (7 buttons)
-5. Helper description text
-6. Footer copyright
+2. Main title
+3. Contact buttons grid (5 buttons)
+4. Helper description text
+5. Footer copyright
 
 **Centering**: All content vertically and horizontally centered using full viewport height (min-h-screen, flex, items-center, justify-center)
 
@@ -37,43 +36,28 @@ A modern, mobile-responsive single-page contact website for Maison Nomade Touris
 
 ## Component Specifications
 
-### Contact Buttons (7 total)
+### Contact Buttons (5 total)
 **Buttons with links**:
 1. Telegram → https://t.me/faklllp
 2. WhatsApp → https://wa.me/375333712473
 3. Instagram → https://www.instagram.com/maison.nomade.tourism/
 4. Website → https://maison-nomade-tourism.com/
-5. Email → mailto:info@mn-tourism.com
-6. LinkedIn → https://www.linkedin.com/company/maison-nomade-tourism
-7. Phone → tel:+375333712473
+5. Phone → tel:+375333712473
 
 **Button Design**:
 - Wide, rounded corners (generous border-radius)
 - Soft shadow for depth
-- Icons on left (Telegram, WhatsApp, Instagram, Website/Globe, Email, LinkedIn, Phone icons)
+- Icons on left (Telegram, WhatsApp, Instagram, Website/Globe, Phone icons)
 - Arrow icon (→) on right
 - Smooth hover/tap effects: scale-[1.03] with subtle glow/shimmer
 - External links open in new tab (target="_blank", rel="noopener noreferrer")
-- mailto/tel links open natively
+- tel links open natively
 
-### Language Switcher
-**Position**: Top-right corner
-**States**: RU (default) / EN
-**Behavior**: Toggle between languages, updates all content instantly
-**Updates**: Changes title, helper text, button labels, and HTML lang attribute
+## Content (English)
 
-## Content (Bilingual)
-
-### Russian (Default)
-- **Title**: "ВЫБЕРИТЕ УДОБНЫЙ МЕССЕНДЖЕР ДЛЯ СВЯЗИ"
-- **Helper**: "Облегчите свое путешествие с помощью нашей службы поддержки, которая работает безупречно и индивидуально"
-- **Buttons**: Telegram, WhatsApp, Instagram, Веб-сайт, E-mail, LinkedIn, Позвонить
-- **Footer**: ©2025 MAISON NOMADE
-
-### English
 - **Title**: "CHOOSE A CONVENIENT MESSENGER TO CONTACT US"
 - **Helper**: "Make your trip easier with our support team that works flawlessly and personally"
-- **Buttons**: Telegram, WhatsApp, Instagram, Website, E-mail, LinkedIn, Call us
+- **Buttons**: Telegram, WhatsApp, Instagram, Website, Call us
 - **Footer**: ©2025 MAISON NOMADE
 
 ## Animations & Interactions

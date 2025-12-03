@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { Globe, Phone, ArrowRight } from 'lucide-react';
 import { SiTelegram, SiWhatsapp, SiInstagram } from 'react-icons/si';
 import { Button } from '@/components/ui/button';
-import { translations, contactLinks, type Language } from '@/config/translations';
+import { content, contactLinks } from '@/config/translations';
 import logoImage from '@assets/logo_1760818509957.png';
 
 const iconComponents = {
@@ -14,19 +14,12 @@ const iconComponents = {
 };
 
 export default function ContactPage() {
-  const [language, setLanguage] = useState<Language>('ru');
   const [isVisible, setIsVisible] = useState(false);
-
-  const t = translations[language];
 
   useEffect(() => {
     setIsVisible(true);
-    document.documentElement.lang = language;
-  }, [language]);
-
-  const toggleLanguage = () => {
-    setLanguage(prev => prev === 'ru' ? 'en' : 'ru');
-  };
+    document.documentElement.lang = 'en';
+  }, []);
 
   return (
     <div className="min-h-screen flex items-center justify-center p-4 sm:p-6 md:p-8 relative overflow-hidden" style={{ backgroundColor: '#1e2e52' }}>
@@ -35,18 +28,6 @@ export default function ContactPage() {
           isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
         }`}
       >
-        <div className="absolute top-4 right-4 sm:top-6 sm:right-6 md:top-8 md:right-8 z-10">
-          <Button
-            onClick={toggleLanguage}
-            variant="outline"
-            size="sm"
-            className="bg-white/10 hover:bg-white/20 border-white/30 text-white font-semibold backdrop-blur-sm transition-all duration-300 hover:scale-105"
-            data-testid="button-language-toggle"
-          >
-            {language === 'ru' ? 'EN' : 'RU'}
-          </Button>
-        </div>
-
         <div className="text-center space-y-8 sm:space-y-10 md:space-y-12">
           <div 
             className={`transition-all duration-700 delay-100 ${
@@ -70,13 +51,13 @@ export default function ContactPage() {
               className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 sm:mb-6 tracking-tight px-4"
               data-testid="text-title"
             >
-              {t.title}
+              {content.title}
             </h1>
             <p 
               className="text-base sm:text-lg md:text-xl text-white/80 max-w-2xl mx-auto px-4 font-light"
               data-testid="text-helper"
             >
-              {t.helper}
+              {content.helper}
             </p>
           </div>
 
@@ -87,7 +68,7 @@ export default function ContactPage() {
           >
             {contactLinks.map((link, index) => {
               const IconComponent = iconComponents[link.icon as keyof typeof iconComponents];
-              const buttonLabel = t.buttons[link.id as keyof typeof t.buttons];
+              const buttonLabel = content.buttons[link.id as keyof typeof content.buttons];
               
               if (!IconComponent) {
                 console.error(`Icon component not found for: ${link.icon}`);
@@ -134,7 +115,7 @@ export default function ContactPage() {
               className="text-sm sm:text-base text-white/60 font-light"
               data-testid="text-footer"
             >
-              {t.footer}
+              {content.footer}
             </p>
           </div>
         </div>
