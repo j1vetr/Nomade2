@@ -19,9 +19,9 @@ export interface ContactLink {
 }
 
 export const contactLinks: ContactLink[] = [
-  { id: 'telegram', url: 'https://t.me/faklllp?text=Hello!%20I%20learned%20about%20you%20through%20Syndicate%20barbershop.%20I%20would%20like%20to%20get%20a%20consultation%20on%20organizing%20a%20trip.', icon: 'SiTelegram', external: true },
-  { id: 'whatsapp', url: 'https://wa.me/375333712473?text=Hello!%20I%20learned%20about%20you%20through%20Syndicate%20barbershop.%20I%20would%20like%20to%20get%20a%20consultation%20on%20organizing%20a%20trip.', icon: 'SiWhatsapp', external: true },
+  { id: 'telegram', url: 'https://t.me/anil_klk?text=Good%20day!%20I%20am%20reaching%20out%20via%20Bruncho_uk.%20Could%20you%20please%20assist%20me%20with%20your%20services%3F', icon: 'SiTelegram', external: true },
+  { id: 'whatsapp', url: 'https://wa.me/971507793349?text=Good%20day!%20I%20am%20reaching%20out%20via%20Bruncho_uk.%20Could%20you%20please%20assist%20me%20with%20your%20services%3F', icon: 'SiWhatsapp', external: true },
   { id: 'instagram', url: 'https://www.instagram.com/maison.nomade.tourism/', icon: 'SiInstagram', external: true },
   { id: 'website', url: 'https://maison-nomade-tourism.com/', icon: 'Globe', external: true },
-  { id: 'call', url: 'tel:+375333712473', icon: 'Phone', external: false }
+  { id: 'call', url: 'tel:+971507793349', icon: 'Phone', external: false }
 ];
